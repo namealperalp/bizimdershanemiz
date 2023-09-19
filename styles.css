@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(227, 248, 255);
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  img {
+
+    width: 2000px;
+    height: 1000px;
+    object-fit: cover;
+    object-position: 100% 30%;
+
+  }
+  
+
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #example1 {
+
+    border: 10px solid black;
+    padding: 35px;
+    background: url(pic/edu2.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+#example2 {
+
+    border: 1px solid black;
+    padding: 35px;
+    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+}
