@@ -19,15 +19,25 @@ body {
     height: 1000px;
     object-fit: cover;
     object-position: 100% 30%;
+    opacity: 0.5;
 
   }
-  
+
+  #responsive-image {
+      width: 100%;  
+      height: auto;     
+      object-fit: cover;
+      object-position: 100% 30%;
+      opacity: 0.5;
+
+  } 
+
 
 
   .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   /* Bottom left text */
@@ -62,7 +72,7 @@ body {
   /* Centered text */
   .centered {
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -76,7 +86,7 @@ body {
 }
 #example2 {
 
-    border: 1px solid black;
+    border: 1px solid rgb(255, 0, 0);
     padding: 35px;
-    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+    background: rgba(255, 255, 255, 0.5) /* Green background with 30% opacity */
 }
