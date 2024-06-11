@@ -1,55 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
 
     <title>Bizim Dershanemiz</title>
- 
-
   </head>
-    <body>
-    <div>
-      <button
-        class="tablink"
-        id="HomeB"
-        onclick="openPage('Home', this, 'red')"
-      >
-        Anasayfa
-      </button>
-      <button
-        class="tablink"
-        onclick="openPage('News', this, 'green')"
-        id="defaultOpen"
-      >
-        Neden Biz?
-      </button>
-      <button class="tablink" onclick="openPage('Contact', this, 'blue')">
-        Contact
-      </button>
-      <button class="tablink" onclick="openPage('About', this, 'orange')">
-        About
-      </button>
-    </div>
+  <body>
+    <header>
+      <h1>Bizim Dershanemiz</h1>
+      <nav>
+          <button class="tablink" id="HomeB" onclick="openPage('Home', this, '#dc3545')">Anasayfa</button>
+          <button class="tablink" id="defaultOpen" onclick="openPage('News', this, '#28a745')">Neden Biz?</button>
+          <button class="tablink" onclick="openPage('Contact', this, '#007bff')">İletişim</button>
+          <button class="tablink" onclick="openPage('About', this, '#ffc107')">Hakkımızda</button>
+      </nav>
+  </header>
     <p>
       Eğitimlerimize ulaşmak için bizi Arayın: 05538241477
       <a href="https://www.youtube.com/alperalp19">Youtube Kanalımız</a>
-      
+    </p>
+
     <div id="Home" class="tabcontent">
-      <h3>Home</h3>
-      <p>Home is where the heart is..</p>
-      <div></div>
+      <p>Bizim Dershanemiz ile hayallerinize ulaşın.</p>
+      <button class="btn">Eğitimleri Keşfedin</button>
+  <p>
+    Bizim Dershanemiz, öğrencilerimizin akademik başarılarını en üst düzeye çıkarmak için bireysel öğrenme ihtiyaçlarına uygun, özelleştirilmiş bir eğitim deneyimi sunar. Uzman öğretmen kadromuzla matematik, fizik, kimya, biyoloji ve Türkçe derslerindeki kavramsal anlamayı güçlendirerek, lise öğrencilerinin ve üniversiteye giriş sınavlarına hazırlananların hedeflerine ulaşmalarına destek oluruz. Sadece sınav başarısına odaklanmak yerine, öğrenme sevgisini ve özgüveni de geliştirecek bir ortam sağlarız.
+
+
+  </p>
+      
     </div>
 
     <div id="News" class="tabcontent">
       <h3>Neden Biz!</h3>
 
       <div class="container">
-        <img src="pic/edu2.jpg" id="responsive-image" />
-        <div class="centered">
-          <h1 style="color: red">Sizin Dershanenize Hoşgeldiniz!</h1>
-          <div id="example2">
+        <img alt="online lessons" src="pic/edu2.jpg" id="responsive-image" />
+        <div class="top">
+          <h1>Sizin Dershanenize Hoşgeldiniz!</h1>
+          <div class="example2">
             <h2>Birebir Özel Dersler</h2>
             <p>
               Birebir özel derslerimizle lise öğrencilerine ve üniversite
@@ -60,7 +52,7 @@
             </p>
           </div>
           <p></p>
-          <div id="example2">
+          <div class="example2">
             <h2>Grup Dersleri</h2>
             <p>
               Grup derslerimizle öğrencilerin birbirleriyle etkileşimde
@@ -72,7 +64,7 @@
           </div>
           <p></p>
 
-          <div id="example2">
+          <div class="example2">
             <h2>Öğretmen Kalitesi</h2>
             <p>
               Öğretmenlerimiz alanında uzman kişilerden oluşmaktadır.
@@ -88,16 +80,38 @@
       </div>
     </div>
 
+    <section id="Contact" class="tabcontent">
+      <h2>İletişim</h2>
+      <p>Eğitimlerimize ulaşmak için bizi arayın: 0553 824 14 77</p>
+      <p><a href="https://www.youtube.com/alperalp19">Youtube Kanalımız</a></p>
+      </section>
 
-
-    <div id="Contact" class="tabcontent">
-      <h3>Contact</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
+      <div id="About" class="tabcontent">
+        <h2>Hakkımızda</h2>
+        <p>
+            Eğitim alanında özel kurum ve kuruluşlarda uzun yıllar boyunca edindiğim deneyimle, öğrencilerimin akademik başarılarını en üst düzeye çıkarmayı hedefleyen bir eğitimciyim. Özel dersler ve kurslar aracılığıyla öğrencilerime bireysel öğrenme ihtiyaçlarına uygun, özelleştirilmiş bir eğitim deneyimi sunuyorum.
+        </p>
+    
+        <p>
+            Matematik, fizik, kimya, biyoloji ve Türkçe gibi temel derslerde uzmanlığımla, öğrencilerimin kavramsal anlamalarını güçlendirerek sınavlara hazırlık süreçlerini destekliyorum. Lise öğrencilerinden üniversiteye giriş sınavlarına hazırlananlara kadar geniş bir öğrenci kitlesiyle çalışarak, onların hedeflerine ulaşmalarına katkı sağlıyorum.
+        </p>
+    
+        <p>
+            Öğrencilerimin sadece sınav başarısını değil, aynı zamanda öğrenme sevgisini ve özgüvenlerini de geliştirmelerine önem veriyorum. Etkili iletişim ve motivasyon teknikleri kullanarak öğrencilerimi cesaretlendiriyor, onların potansiyellerini keşfetmelerine yardımcı oluyorum.
+        </p>
+    
+        <p>
+            Eğitim alanındaki güncel gelişmeleri yakından takip ederek, öğrencilerime en etkili ve yenilikçi öğrenme yöntemlerini sunuyorum. Teknolojiyi eğitim sürecine entegre ederek, öğrenmeyi daha ilgi çekici ve etkileşimli hale getiriyorum.
+        </p>
+    
+        <p>
+            Öğrencilerimin başarıları benim için en büyük motivasyon kaynağıdır. Onların hedeflerine ulaşmalarına tanık olmak, eğitimcilik yolculuğumdaki en büyük ödülüm.
+        </p>
     </div>
+    
 
-    <div id="About" class="tabcontent">
-      <h3>About</h3>
-      <p>Who we are and what we do.</p>
-    </div>
+    <footer>
+      <p>&copy; 2024 Bizim Dershanemiz</p>
+  </footer>
   </body>
 </html>

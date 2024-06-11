@@ -1,4 +1,47 @@
-/* Style tab links */
+/* Genel Stil Ayarları */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Okunaklı bir font seçimi */
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f4f4; /* Nötr bir arka plan rengi */
+  color: #333; /* Koyu metin rengi */
+}
+
+/* Başlık Stilleri */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; /* Başlıklar için daha dikkat çekici bir font */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Paragraf Stilleri */
+/* Masaüstü ve daha büyük ekranlar için */
+p {
+    text-align: center;
+}
+
+/* Tablet ve daha küçük ekranlar için */
+@media (max-width: 768px) {
+    p {
+        text-align: left; /* Sola hizala */
+    }
+    p a {
+        display: block; /* Linki yeni satıra taşı */
+        margin-top: 0.5rem;
+    }
+}
+
+/* Link Stilleri */
+a {
+  color: #007bff; /* Link rengi */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tab Stilleri */
 .tablink {
   background-color: #555;
   color: white;
@@ -9,122 +52,64 @@
   padding: 14px 16px;
   font-size: 17px;
   width: 25%;
+  transition: background-color 0.3s ease; /* Geçiş efekti eklendi */
 }
 
 .tablink:hover {
   background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
   display: none;
-  padding: 1px 10px;
+  padding: 20px;
   height: 100%;
 }
 
-#Home {background-color: red;}
-#News {background-color: rgb(173, 190, 212);}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home { background-color: #dc3545; } /* Kırmızı */
+#News { background-color: #28a745; } /* Yeşil */
+#Contact { background-color: #ffc107; } /* Mavi */
+#About { background-color: #007bff; } /* Sarı */
 
-
-body {
-    background-color: rgb(227, 248, 255);
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
-
-  img {
-
-    width: 2000px;
-    height: 1000px;
-    object-fit: cover;
-    object-position: 100% 30%;
-    opacity: 0.5;
-
-  }
-
-  #responsive-image {
-      width: 100%;  
-      height: auto;     
-      object-fit: cover;
-      object-position: 100% 30%;
-      opacity: 0.5;
-
-  } 
-
-
-
-  .container {
-    position: relative;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
-  
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    
-  }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  /* Bottom right text */
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  /* Centered text */
-  .centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  #example1 {
-
-    border: 10px solid black;
-    padding: 3px;
-    background: url(pic/edu2.jpg);
-    background-repeat: no-repeat;
-    background-origin: content-box;
-}
-#example2 {
-
-    border: 1px solid rgb(255, 0, 0);
-    padding: 3px;
-    background: rgba(255, 255, 255, 0.5) /* Green background with 30% opacity */
-}
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
+/* Container Stili */
+.container {
+  position: relative;
+  text-align: center;
 }
 
+/* Görsel Stilleri */
+#responsive-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center; /* Görselin ortalanması */
+  opacity: 0.7; /* Görselin üzerine gelecek metnin okunabilirliğini artırmak için opacity düşürüldü */
+}
+
+.centered {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Metin rengi beyaz yapıldı (görselin üzerine geleceği için) */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Metnin okunabilirliğini artırmak için gölge eklendi */
+}
+.top {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Metin rengi beyaz yapıldı (görselin üzerine geleceği için) */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Metnin okunabilirliğini artırmak için gölge eklendi */
+}
+/* Diğer Stiller */
+.example2 {
+  
+  border: 1px solid #ddd;
+  padding: 2px;
+  background-color: rgb(255, 255, 255,0.7); /* Arka plan rengi beyaz yapıldı */
+  color: #333; /* Metin rengi koyu yapıldı */
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge eklendi */
+}
