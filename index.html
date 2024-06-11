@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 
-<title>Bizim Dershanemiz</title>
-<a href="links.html">1</a> 
-<a href="slide.html">2</a> 
-<a href="new_slide.html">3</a>
-</head>
-<body>
-
-
-
-<div class="container">
-    <img src="pic/edu2.jpg" id="responsive-image">
-    <div class="centered">
-        <h1>Sizin Dershanenize Hoşgeldiniz!</h1>
-        <h1 style="color:red"> Sizin Dershanenize Hoşgeldiniz! </h1>
-
-        <div id="example2">
-            <h2>Birebir Özel Dersler</h2>
-            <p>
-                Birebir özel derslerimizle lise öğrencilerine ve üniversite sınavlarına hazırlananlara yardımcı oluyoruz. 
-                YKS ve KPSS kurslarımızla öğrencilerin sınavlara en iyi şekilde hazırlanmalarını sağlıyoruz. 
-                Matematik Fizik, Kimya, Biyoloji ve Türkçe dersleri sunuyoruz.
-            </p>
-                     
-        </div>
-    
-        <p>
+    <title>Bizim Dershanemiz</title>
  
 
-        </p>
+  </head>
+    <body>
+    <div>
+      <button
+        class="tablink"
+        id="HomeB"
+        onclick="openPage('Home', this, 'red')"
+      >
+        Anasayfa
+      </button>
+      <button
+        class="tablink"
+        onclick="openPage('News', this, 'green')"
+        id="defaultOpen"
+      >
+        Neden Biz?
+      </button>
+      <button class="tablink" onclick="openPage('Contact', this, 'blue')">
+        Contact
+      </button>
+      <button class="tablink" onclick="openPage('About', this, 'orange')">
+        About
+      </button>
+    </div>
+    <p>
+      Eğitimlerimize ulaşmak için bizi Arayın: 05538241477
+      <a href="https://www.youtube.com/alperalp19">Youtube Kanalımız</a>
+      
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <p>Home is where the heart is..</p>
+      <div></div>
+    </div>
 
-        <div id="example2">
-            <h2>Grup Dersleri
-            </h2>
+    <div id="News" class="tabcontent">
+      <h3>Neden Biz!</h3>
+
+      <div class="container">
+        <img src="pic/edu2.jpg" id="responsive-image" />
+        <div class="centered">
+          <h1 style="color: red">Sizin Dershanenize Hoşgeldiniz!</h1>
+          <div id="example2">
+            <h2>Birebir Özel Dersler</h2>
             <p>
-                Grup derslerimizle öğrencilerin birbirleriyle etkileşimde bulunmasını sağlıyoruz. 
-                Bu sayede öğrenciler birbirlerinden öğrenebilir ve birlikte çalışabilirler. 
-                Grup derslerimizde matematik, fizik, kimya, biyoloji ve Türkçe gibi dersler verilmektedir.
+              Birebir özel derslerimizle lise öğrencilerine ve üniversite
+              sınavlarına hazırlananlara yardımcı oluyoruz. YKS ve KPSS
+              kurslarımızla öğrencilerin sınavlara en iyi şekilde
+              hazırlanmalarını sağlıyoruz. Matematik Fizik, Kimya, Biyoloji ve
+              Türkçe dersleri sunuyoruz.
             </p>
-                     
+          </div>
+          <p></p>
+          <div id="example2">
+            <h2>Grup Dersleri</h2>
+            <p>
+              Grup derslerimizle öğrencilerin birbirleriyle etkileşimde
+              bulunmasını sağlıyoruz. Bu sayede öğrenciler birbirlerinden
+              öğrenebilir ve birlikte çalışabilirler. Grup derslerimizde
+              matematik, fizik, kimya, biyoloji ve Türkçe gibi dersler
+              verilmektedir.
+            </p>
+          </div>
+          <p></p>
+
+          <div id="example2">
+            <h2>Öğretmen Kalitesi</h2>
+            <p>
+              Öğretmenlerimiz alanında uzman kişilerden oluşmaktadır.
+              Öğretmenlerimiz öğrencilere konuları anlaşılır bir şekilde
+              anlatırken aynı zamanda onların sorularına da cevap
+              verebilmektedir. Zamanı Verimli Kullanma Rehberliği Öğrencilere
+              zamanlarını verimli bir şekilde kullanmalarına yardımcı oluyoruz.
+              Öğrencilere nasıl çalışmaları gerektiği konusunda rehberlik
+              ediyoruz.
+            </p>
+          </div>
         </div>
-    
+      </div>
     </div>
 
-    <div class="top-right">
 
-        <p>Eğitimlerimize ulaşmak için bizi Arayın: 05538241477
-            <br>
-                    <a href="https://www.youtube.com/alperalp19">Youtube Kanalımız</a>
-            <br> 
 
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
 
-</div>
-
-
-
-</div>
-<!-- This is a comment 
-Öğretmen Kalitesi
-
-Öğretmenlerimiz alanında uzman kişilerden oluşmaktadır. Öğretmenlerimiz öğrencilere konuları anlaşılır bir şekilde anlatırken aynı zamanda onların sorularına da cevap verebilmektedir.
-
-Zamanı Verimli Kullanma Rehberliği
-
-Öğrencilere zamanlarını verimli bir şekilde kullanmalarına yardımcı oluyoruz. Öğrencilere nasıl çalışmaları gerektiği konusunda rehberlik ediyoruz.
-
--->
-
-</body>
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+  </body>
 </html>
