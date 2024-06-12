@@ -29,6 +29,16 @@ p {
         display: block; /* Linki yeni satıra taşı */
         margin-top: 0.5rem;
     }
+
+    example2 {
+      text-align: left; /* Sola hizala */
+      
+    }a {
+      display: block; /* yeni satıra taşı */
+      margin-top: 0.5rem;
+  }
+
+    }
 }
 
 /* Link Stilleri */
